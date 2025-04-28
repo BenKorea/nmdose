@@ -1,0 +1,36 @@
+﻿**********************
+Windows PowerShell 기록 시작
+시작 시간: 20250428134650
+사용자 이름: KIMBI\Ben
+RunAs 사용자: KIMBI\Ben
+구성 이름: 
+Machine: KIMBI (Microsoft Windows NT 10.0.19045.0)
+호스트 응용 프로그램: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+프로세스 ID: 47904
+PSVersion: 5.1.19041.5737
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.5737
+BuildVersion: 10.0.19041.5737
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+기록이 시작되었습니다. 출력 파일은 C:\nmdose\logs\sync_20250428_134650.log입니다.
+Script started for date range 20250103-20250103 and modality NM
+Querying studies on NMPACS...
+Query completed: found 2 UIDs
+Starting C-MOVE operations...
+Moving study UID: 1.2.410.2000058.82.2.1384.1024015776
+
+Completed move for UID: 1.2.410.2000058.82.2.1384.1024015776
+
+Moving study UID: 1.2.410.2000058.82.2.1384.1024015784
+
+Completed move for UID: 1.2.410.2000058.82.2.1384.1024015784
+
+All C-MOVE requests completed.
+**********************
+Windows PowerShell 기록 끝
+종료 시간: 20250428134653
+**********************
