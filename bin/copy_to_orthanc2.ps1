@@ -38,46 +38,41 @@ $LogFile   = Join-Path $LogDirectory "sync_${TimeStamp}.log"
 
 Start-Transcript -Path $LogFile -NoClobber
 
-# (이전 Param, 디렉터리 준비, 트랜스크립트 등 생략)
+#— 설정 로드 —#
+$config = Get-Content $ConfigPath | ConvertFrom-Json
 
-# 설정 로드
-$config      = Get-Content $ConfigPath | ConvertFrom-Json
-$AETLocal    = $config.NMPACS.CallingAET
-$AETRemote   = $config.NMPACS.AET
-$DicomHost   = $config.NMPACS.Host
-$Port        = $config.NMPACS.Port
-$DateRange   = $config.Transfer.DateRange
-$Modalities  = $config.Transfer.Modalities  # 이제 배열
+$AETLocal  = $config.NMPACS.CallingAET
+$AETRemote = $config.NMPACS.AET
+$DicomHost = $config.NMPACS.Host
+$Port      = $config.NMPACS.Port
+$DateRange = $config.Transfer.DateRange
+$Modality  = $config.Transfer.Modality
 
-Write-Host "Script started for date range $DateRange and modalities $($Modalities -join ',')" -ForegroundColor Cyan
+#— 시작 메시지 —#
+Write-Host "Script started for date range $DateRange and modality $Modality" -ForegroundColor Cyan
 
-# 1) Query UIDs on NMPACS for each Modality
+# 1) Query UIDs on NMPACS
 Write-Host "Querying studies on NMPACS..." -ForegroundColor Yellow
-$allUids = foreach ($mod in $Modalities) {
-    Write-Host " • Modality = $mod" -ForegroundColor DarkYellow
+$uids = @(
     & findscu -v -S `
         -aet $AETLocal `
         -aec $AETRemote `
         $DicomHost $Port `
         -k QueryRetrieveLevel=STUDY `
         -k StudyDate=$DateRange `
-        -k ModalitiesInStudy=$mod `
+        -k ModalitiesInStudy=$Modality `
         -k StudyInstanceUID 2>&1 |
     Select-String 'StudyInstanceUID' |
     ForEach-Object {
         if ($_ -match 'UI \[([^\]]+)\]') { $matches[1] }
     }
-}
-
-# 중복 제거
-$uids = $allUids | Sort-Object -Unique
-
-Write-Host "Total unique UIDs found: $($uids.Count)" -ForegroundColor Green
+)
 
 # 2) Execute C-MOVE for each UID
 Write-Host "Starting C-MOVE operations..." -ForegroundColor Yellow
 foreach ($uid in $uids) {
     Write-Host "Moving study UID: $uid" -ForegroundColor Yellow
+
     movescu -v -S `
         -aet $AETLocal `
         -aec $AETRemote `
@@ -85,9 +80,12 @@ foreach ($uid in $uids) {
         $DicomHost $Port `
         -k QueryRetrieveLevel=STUDY `
         -k StudyInstanceUID=$uid 2>&1
+
     Write-Host "Completed move for UID: $uid" -ForegroundColor Green
     Write-Host ""
 }
 
 Write-Host "All C-MOVE requests completed." -ForegroundColor Cyan
+
+#— 트랜스크립트 종료 —#
 Stop-Transcript

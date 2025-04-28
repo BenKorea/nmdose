@@ -6,7 +6,7 @@
     "CallingAET": "ORTHANC"
   },
   "Transfer": {
-    "StartDate": "20250101",
-    "Modality": "NM"
+    "DateRange": "20250101-20250102",
+    "Modalities": ["NM", "PT"]
   }
 }

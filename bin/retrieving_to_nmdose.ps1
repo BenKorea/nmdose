@@ -1,49 +1,62 @@
-<#
-.SYNOPSIS
-  NMPACS to ORTHANC study copy script (debug output enabled)
-.DESCRIPTION
-  Query PT modality studies within a date range and perform C-MOVE from remote (NMPACS) to local (ORTHANC), printing debug messages.
-#>
+[CmdletBinding()]
+Param(
+    [Parameter(Mandatory=$false)]
+    [string]$ConfigPath = (
+        Join-Path (Split-Path -Parent $PSScriptRoot) 'config\config.json'
+    )
+)
 
-# Variables
+#— 설정 로드 (DateRange 만) —#
+$config    = Get-Content $ConfigPath | ConvertFrom-Json
+$DateRange = $config.Transfer.DateRange
+
+#— 고정 변수 —#
 $AETLocal  = "NMDOSE"
 $AETRemote = "ORTHANC"
 $DicomHost = "127.0.0.1"
 $Port      = 4242
-$DateRange = "20231201-20231291"
-$Modality  = "PT"
+$Modality  = "SR"    # Structured Report
 
-# Start message
 Write-Host "Script started for date range $DateRange and modality $Modality" -ForegroundColor Cyan
 
-# 1) Query UIDs on ORTHANC
-Write-Host "Querying studies on ORTHANC..." -ForegroundColor Yellow
+# 1) Study 레벨에서 SR 포함된 Study 찾기
+$studyUIDs = & findscu -v -S `
+    -aet $AETLocal `
+    -aec $AETRemote `
+    $DicomHost $Port `
+    -k QueryRetrieveLevel=STUDY `
+    -k StudyDate=$DateRange `
+    -k ModalitiesInStudy=SR `
+    -k StudyInstanceUID 2>&1 |
+  Select-String 'StudyInstanceUID' |
+  ForEach-Object { if ($_ -match 'UI \[([^\]]+)\]') { $matches[1] } }
 
-$uids = @(
-    & findscu -v -S -aet $AETLocal -aec $AETRemote $DicomHost $Port -k QueryRetrieveLevel=STUDY -k StudyDate=$DateRange -k ModalitiesInStudy=$Modality -k StudyInstanceUID 2>&1 |
-    Select-String 'StudyInstanceUID' |
-    ForEach-Object {
-        if ($_ -match 'UI \[([^\]]+)\]') { $matches[1] }
-    }
-)
+Write-Host "Found $($studyUIDs.Count) SR studies." -ForegroundColor Green
 
-Write-Host "Query completed: found $($uids.Count) UIDs" -ForegroundColor Green
-
-if ($uids.Count -eq 0) {
-    Write-Host "No studies to synchronize. Exiting script." -ForegroundColor Magenta
-    return
+# 2) 각 Study 안의 SR Series 찾기
+$allSeries = foreach ($stu in $studyUIDs) {
+    & findscu -v -S `
+        -aet $AETLocal `
+        -aec $AETRemote `
+        $DicomHost $Port `
+        -k QueryRetrieveLevel=SERIES `
+        -k StudyInstanceUID=$stu `
+        -k Modality=SR `
+        -k SeriesInstanceUID 2>&1 |
+      Select-String 'SeriesInstanceUID' |
+      ForEach-Object { if ($_ -match 'UI \[([^\]]+)\]') { $matches[1] } }
 }
 
-# 2) Execute C-MOVE for each UID
-Write-Host "Starting C-MOVE operations..." -ForegroundColor Yellow
+$seriesUIDs = $allSeries | Sort-Object -Unique
+Write-Host "Total SR series found: $($seriesUIDs.Count)" -ForegroundColor Green
 
-foreach ($uid in $uids) {
-    Write-Host "Moving study UID: $uid" -ForegroundColor Yellow
-
-    movescu -v -S -aet $AETLocal -aec $AETRemote -aem $AETLocal $DicomHost $Port -k QueryRetrieveLevel=STUDY -k StudyInstanceUID=$uid
-
-    Write-Host "Completed move for UID: $uid" -ForegroundColor Green
-    Write-Host ""
+foreach ($series in $seriesUIDs) {
+    movescu -v -S `
+      -aet $AETLocal `
+      -aec $AETRemote `
+      -aem $AETLocal `
+      $DicomHost $Port `
+      -k QueryRetrieveLevel=SERIES `
+      -k SeriesInstanceUID=$series
+    Write-Host "Moved Series $series" -ForegroundColor Cyan
 }
-
-Write-Host "All C-MOVE requests completed." -ForegroundColor Cyan
