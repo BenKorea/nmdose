@@ -7,6 +7,6 @@
   },
   "Transfer": {
     "DateRange": "20250101-20250102",
-    "Modalities": ["NM", "PT"]
+    "Modalities": ["NM"]
   }
 }

@@ -57,8 +57,7 @@ $allUids = foreach ($mod in $Modalities) {
     Write-Host " • Modality = $mod" -ForegroundColor DarkYellow
     & findscu -v -S `
         -aet $AETLocal `
-        -aec $AETRemote `
-        $DicomHost $Port `
+        -aec $AETRemote $DicomHost $Port `
         -k QueryRetrieveLevel=STUDY `
         -k StudyDate=$DateRange `
         -k ModalitiesInStudy=$mod `
