@@ -22,6 +22,12 @@ Param(
     )
 )
 
+# PostgreSQL 접속 정보
+$PsqlHost = 'localhost'
+$PsqlUser = 'nmuser'
+$PsqlDb   = 'rpacs'
+$PsqlPassword = 'nmuser'
+
 #— Strict 모드 & 디렉터리 준비 —#
 Set-StrictMode -Version Latest
 
@@ -80,10 +86,33 @@ foreach ($uid in $uids) {
     movescu -v -S `
         -aet $AETLocal `
         -aec $AETRemote `
-        -aem $AETLocal `
-        $DicomHost $Port `
+        -aem $AETLocal $DicomHost $Port `
         -k QueryRetrieveLevel=STUDY `
         -k StudyInstanceUID=$uid 2>&1
+
+    # ↓ 이 아래 블록이 추가된 부분입니다 ↓
+
+    # 1) 종료 코드와 성공 여부 계산
+    $exitCode = $LASTEXITCODE
+    $success  = if ($exitCode -eq 0) { 'TRUE' } else { 'FALSE' }
+
+    # 2) 간단한 메시지 (마지막 로그 10줄)
+    $msgLines = Get-Content $LogFile -Tail 10 | ForEach-Object { $_.Replace("'", "''") }
+    $message  = ($msgLines -join "`n").Replace("`n", '\n')
+
+    # 3) INSERT SQL 조합
+    $insertSql = @"
+INSERT INTO dicom_transfer_logs
+  (study_uid, step, exit_code, success, message)
+VALUES
+  ('$uid', 'MOVE', $exitCode, $success, '$message');
+"@
+
+    # 4) psql로 기록
+    psql -h $PsqlHost -U $PsqlUser -d $PsqlDb -c $insertSql
+
+    # ↑ 여기까지 로깅 블록 ↑
+
     Write-Host "Completed move for UID: $uid" -ForegroundColor Green
     Write-Host ""
 }

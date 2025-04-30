@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS dicom_instances (
+  instance_uid   TEXT        PRIMARY KEY,
+  log_id         INTEGER     NOT NULL,
+  file_path      TEXT        NOT NULL,
+  file_size      BIGINT      NOT NULL,
+  checksum       TEXT        NOT NULL,
+  received_time  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  FOREIGN KEY(log_id) REFERENCES dicom_transfer_logs(id)
+);
