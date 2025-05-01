@@ -10,6 +10,9 @@ Param(
 $config    = Get-Content $ConfigPath | ConvertFrom-Json
 $DateRange = $config.Transfer.DateRange
 
+# 데이터의 날짜가 맞지 않아 테스트를 위해 임시로 설정
+$DateRange = "20240101-20240331"
+
 #— 고정 변수 —#
 $AETLocal  = "NMDOSE"
 $AETRemote = "ORTHANC"

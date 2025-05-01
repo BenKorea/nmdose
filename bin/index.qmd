@@ -1,7 +1,0 @@
-```{r to-orthanc, eval=FALSE, filename="PowerShell"}
-C:\nmdose\bin\copy_to_orthanc.ps1
-```
-
-```{r to-nmdose, eval=FALSE, filename="PowerShell"}
-C:\nmdose\bin\retrieving_to_nmdose.ps1
-```

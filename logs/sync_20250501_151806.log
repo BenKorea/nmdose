@@ -1,0 +1,47 @@
+﻿**********************
+Windows PowerShell 기록 시작
+시작 시간: 20250501151806
+사용자 이름: KIMBI-LAPTOP\Benjamin
+RunAs 사용자: KIMBI-LAPTOP\Benjamin
+구성 이름: 
+Machine: KIMBI-LAPTOP (Microsoft Windows NT 10.0.19045.0)
+호스트 응용 프로그램: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command Import-Module 'c:\Users\Benjamin\.vscode\extensions\ms-vscode.powershell-2025.0.0\modules\PowerShellEditorServices\PowerShellEditorServices.psd1'; Start-EditorServices -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '2025.0.0' -BundledModulesPath 'c:\Users\Benjamin\.vscode\extensions\ms-vscode.powershell-2025.0.0\modules' -EnableConsoleRepl -StartupBanner "PowerShell Extension v2025.0.0
+Copyright (c) Microsoft Corporation.
+
+https://aka.ms/vscode-powershell
+Type 'help' to get help.
+" -LogLevel 'Warning' -LogPath 'c:\Users\Benjamin\AppData\Roaming\Code\logs\20250501T145228\window1\exthost\ms-vscode.powershell' -SessionDetailsPath 'c:\Users\Benjamin\AppData\Roaming\Code\User\globalStorage\ms-vscode.powershell\sessions\PSES-VSCode-15416-982479.json' -FeatureFlags @() 
+프로세스 ID: 29120
+PSVersion: 5.1.19041.5737
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.5737
+BuildVersion: 10.0.19041.5737
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+기록이 시작되었습니다. 출력 파일은 C:\nmdose\logs\sync_20250501_151806.log입니다.
+Script started for date range 20250101-20250102 and modalities NM
+Querying studies on NMPACS...
+ ??Modality = NM
+이 개체에서 'Count' 속성을 찾을 수 없습니다. 해당 속성이 있는지 검증하십시오.
+위치 C:\nmdose\bin\copy_to_orthanc.ps1:80 문자:40
++ Write-Host "Total unique UIDs found: $($uids.Count)" -ForegroundColor ...
++                                        ~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], PropertyNotFoundException
+    + FullyQualifiedErrorId : PropertyNotFoundStrict
+이 개체에서 'Count' 속성을 찾을 수 없습니다. 해당 속성이 있는지 검증하십시오.
+위치 C:\nmdose\bin\copy_to_orthanc.ps1:80 문자:40
++ Write-Host "Total unique UIDs found: $($uids.Count)" -ForegroundColor ...
++                                        ~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], PropertyNotFoundException
+    + FullyQualifiedErrorId : PropertyNotFoundStrict
+
+Total unique UIDs found:
+Starting C-MOVE operations...
+All C-MOVE requests completed.
+**********************
+Windows PowerShell 기록 끝
+종료 시간: 20250501151828
+**********************
