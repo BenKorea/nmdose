@@ -1,0 +1,2 @@
+[console_scripts]
+nmdose = nmdose.main:cli

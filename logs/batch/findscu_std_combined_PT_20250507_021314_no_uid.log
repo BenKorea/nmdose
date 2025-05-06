@@ -1,0 +1,1964 @@
+I: Requesting Association
+I: Association Accepted (Max Send PDV: 32756)
+I: Sending Find Request (MsgID 1)
+I: Request Identifiers:
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20221231-20231230]                      #  18, 1 StudyDate
+I: (0008,0052) CS [STUDY]                                  #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT]                                     #   2, 1 ModalitiesInStudy
+I: (0020,000d) UI (no value available)                     #   0, 0 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 1 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230103]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT]                                     #   2, 1 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023127315]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 2 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230127]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT]                                     #   2, 1 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023158547]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 3 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066331112]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 4 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230823]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT]                                     #   2, 1 ModalitiesInStudy
+I: (0020,000d) UI [1.3.12.2.1107.5.1.4.45592.30000023082223361309300000009] #  56, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 5 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231201]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023553987]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 6 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231201]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066297962]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 7 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231201]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066297987]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 8 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231201]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023554436]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 9 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231201]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023555031]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 10 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231204]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023555741]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 11 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231204]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023555910]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 12 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231204]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066300033]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 13 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231204]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023556288]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 14 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231204]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023556488]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 15 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231204]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066300607]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 16 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023557522]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 17 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023557674]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 18 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023558057]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 19 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023558314]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 20 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023558459]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 21 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023558461]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 22 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231206]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023559242]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 23 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231206]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023559312]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 24 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231206]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023559499]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 25 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231206]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023560160]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 26 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231206]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023560202]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 27 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231206]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023560435]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 28 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231207]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066305001]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 29 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231207]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023561108]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 30 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231207]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023561222]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 31 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231207]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023562243]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 32 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231208]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023563507]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 33 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231208]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023563572]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 34 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231208]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066307556]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 35 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231208]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066307644]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 36 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231211]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066309174]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 37 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231211]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066309247]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 38 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231211]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023565515]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 39 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231211]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023565774]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 40 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231211]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023566038]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 41 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231211]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023566028]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 42 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231211]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023566324]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 43 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231212]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023567098]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 44 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231212]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023567199]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 45 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231212]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023567404]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 46 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231212]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023567409]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 47 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231212]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023567906]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 48 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231212]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066312074]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 49 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231212]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023568273]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 50 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231213]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023569723]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 51 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231213]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023569857]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 52 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231213]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023569922]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 53 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231213]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023569991]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 54 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231214]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023570690]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 55 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231214]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023570761]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 56 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231214]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023571030]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 57 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231214]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023571287]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 58 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231214]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066315097]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 59 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231221]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023579528]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 60 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231221]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066323982]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 61 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231221]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023580545]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 62 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231221]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023580561]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 63 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231221]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023580630]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 64 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231221]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023580706]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 65 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231222]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023581308]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 66 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231222]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023581535]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 67 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231222]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023581747]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 68 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231222]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023582215]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 69 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231222]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023582342]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 70 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023583263]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 71 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023583528]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 72 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023583714]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 73 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023584057]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 74 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023584213]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 75 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023584322]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 76 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231227]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023585116]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 77 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231227]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023585261]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 78 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231227]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023585577]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 79 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231227]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023585703]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 80 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231227]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023585882]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 81 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023586540]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 82 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023586646]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 83 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066330582]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 84 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066330540]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 85 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066331088]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 86 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231201]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066297885]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 87 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231201]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023553999]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 88 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231201]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023554120]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 89 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231201]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023554435]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 90 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231201]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023554866]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 91 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231201]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023555032]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 92 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231204]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023555726]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 93 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231204]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023555926]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 94 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231204]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023556180]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 95 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231204]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066300647]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 96 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231204]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023556916]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 97 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023557537]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 98 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023557853]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 99 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023558014]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 100 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023558257]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 101 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023558437]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 102 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023558637]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 103 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231206]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023559243]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 104 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231206]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023559272]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 105 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231206]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023559502]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 106 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231206]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023559710]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 107 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231206]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066304288]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 108 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231208]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066306711]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 109 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231208]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023563307]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 110 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231208]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023563400]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 111 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231208]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066307233]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 112 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231208]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023564021]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 113 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231208]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023564228]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 114 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231211]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066309212]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 115 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231211]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023565737]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 116 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231211]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023565769]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 117 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231211]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023566331]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 118 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231212]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023567122]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 119 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231212]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023567224]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 120 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231212]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023567164]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 121 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231212]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023567622]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 122 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231212]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023567992]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 123 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231214]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023571673]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 124 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231214]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023571880]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 125 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231215]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023572383]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 126 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231215]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023572582]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 127 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231215]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023572856]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 128 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231215]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023572881]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 129 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231215]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023573043]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 130 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231215]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066317308]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 131 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231215]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023573426]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 132 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231218]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023574296]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 133 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231218]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023574723]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 134 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231218]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023574359]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 135 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231218]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023575534]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 136 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231218]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066319507]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 137 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231219]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023576223]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 138 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231219]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023576308]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 139 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231219]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023576506]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 140 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231219]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023576678]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 141 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231219]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023577053]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 142 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231219]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023577146]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 143 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231219]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023577218]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 144 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231219]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066321166]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 145 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231219]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023577316]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 146 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231220]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023577924]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 147 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231220]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023578073]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 148 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231220]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066322180]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 149 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231220]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023578442]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 150 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066327156]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 151 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023583332]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 152 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023583627]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 153 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023583527]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 154 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023584012]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 155 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066327940]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 156 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231226]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023584130]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 157 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231227]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023585053]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 158 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231227]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023585248]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 159 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231227]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023585685]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 160 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231227]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023585702]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 161 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231227]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023585966]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 162 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231227]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023585955]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 163 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023586524]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 164 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2066330513]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 165 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023586874]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 166 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023586906]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 167 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023587349]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 168 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023587430]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 169 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231228]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023587493]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 170 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231229]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023588060]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 171 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231229]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023588139]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 172 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231229]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023588511]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 173 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230118]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023150096]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 174 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230222]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023193488]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 175 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230317]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.2065978028]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 176 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230413]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023267721]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 177 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230609]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023336185]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 178 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230627]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023359295]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 179 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230927]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023478140]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 180 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231012]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [PT\CT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023491065]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 181 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230201]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023164375]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 182 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230308]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023210607]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 183 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230317]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023223197]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 184 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230419]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023274881]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 185 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230426]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023283717]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 186 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230517]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023307364]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 187 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230714]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023383222]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 188 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230720]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023390831]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 189 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230817]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023428180]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 190 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230824]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023436882]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 191 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20230926]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023476628]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 192 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231018]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023498482]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 193 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231023]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023503896]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 194 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231129]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023551494]   #  36, 1 StudyInstanceUID
+I: 
+I: ---------------------------
+I: Find Response: 195 (Pending)
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0020) DA [20231205]                               #   8, 1 StudyDate
+I: (0008,0052) CS [STUDY ]                                 #   6, 1 QueryRetrieveLevel
+I: (0008,0061) CS [CT\PT ]                                 #   6, 2 ModalitiesInStudy
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1023558431]   #  36, 1 StudyInstanceUID
+I: 
+I: Received Final Find Response (Success)
+I: Releasing Association

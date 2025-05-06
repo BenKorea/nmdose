@@ -1,0 +1,15 @@
+I: Requesting Association
+I: Association Accepted (Max Send PDV: 32756)
+I: Sending Move Request (MsgID 1)
+I: Request Identifiers:
+I: 
+I: # Dicom-Data-Set
+I: # Used TransferSyntax: Little Endian Explicit
+I: (0008,0052) CS [STUDY]                                  #   6, 1 QueryRetrieveLevel
+I: (0020,000d) UI [1.2.410.2000058.82.2.1384.1022812150]   #  36, 1 StudyInstanceUID
+I: 
+I: Received Move Response 1 (Pending)
+I: Received Move Response 2 (Pending)
+I: Received Move Response 3 (Pending)
+I: Received Final Move Response (Success)
+I: Releasing Association

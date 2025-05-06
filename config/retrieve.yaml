@@ -1,0 +1,18 @@
+# clinicalPACS → researchPACS: NM 또는 PT만 리트리브하며 'outside'가 포함된 검사는 제외
+clinical_to_research:
+  modalities: ["PT", "NM"]
+  exclude_if_study_description_contains: "outside"
+
+# researchPACS → dosePACS: CT 관련 선량 정보 추출 우선순위 및 fallback 옵션들
+research_to_dose:
+  ct_dose_retrieving:
+    priority: "SR"  # 'SR' 시리즈 우선
+    fallback_series_description: ["Dose Report", "Patient Protocol"]
+    fallback_to_all_ct: true     # 위 조건 모두 없을 시 CT 시리즈 전체 리트리브 여부
+
+  # PET 관련 옵션: ImageNumber가 1인 시리즈만 리트리브할지 여부
+  pet_image_option:
+    enabled: true
+    condition:
+      modality: "PET"
+      image_number: 1
