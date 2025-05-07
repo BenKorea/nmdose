@@ -1,4 +1,22 @@
-/conquest/
+# R
+_freeze/
 .Rproj.user
-/renv/
-/data/
+.Rhistory
+.RData
+.Ruserdata
+.Rprofile
+*.Rproj
+.quarto/
+/.quarto/
+raw_data/
+renv/
+
+# Python
+venv/
+__pycache__/
+.ipynb_checkpoints/
+*.code-workspace
+
+# general
+conquest/
+data/
