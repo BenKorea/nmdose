@@ -3,7 +3,7 @@ batch_retrieving:
   start_date: "20220101"         # batch 작업을 적용하는 기점일
   start_time: "02:00"            # 야간 배치 시작 시간
   end_time: "06:00"              # 야간 배치 종료 시간
-  batch_days: 365                  # 한 번에 처리할 날짜수
+  batch_days: 4                  # 한 번에 처리할 날짜수
 # daily_retrieving: 날마다 추가되는 신규검사들을 주간에 추출하는 작업
 daily_retrieving:
   start_date: "20250508"         # 일상적인 자동 수집 시작일

@@ -160,7 +160,10 @@ def run_retrieve():
 
     # 1) 환경 초기화
     cfg, pacs, rcfg, sched, conn, log_dir = init_environment()
+    print(f"▶ Running mode: {cfg.running_mode}")
     source, target = select_pacs(cfg, pacs)
+
+    print(target)
     date_range     = make_batch_date_range()
     modalities     = rcfg.clinical_to_research.modalities
 

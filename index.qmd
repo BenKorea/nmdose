@@ -12,6 +12,10 @@ C:\nmdose\bin\copy_to_orthanc.ps1
 C:\nmdose\bin\retrieving_to_nmdose.ps1
 ```
 
+```{r to-dicoogle, eval=FALSE, filename="PowerShell"}
+C:\nmdose\bin\retrieving_to_dicoogle.ps1
+```
+
 ## 일회성코드
 
 ```{r dicom_instance, eval=FALSE, filename="pqsl"}

@@ -55,10 +55,12 @@ def get_config(base_path: str = None) -> Config:
             cfg_dir = Path(__file__).parents[3] / "config"
 
         cfg_file = cfg_dir / "config.yaml"
+
         if not cfg_file.is_file():
             raise FileNotFoundError(f"설정 파일을 찾을 수 없습니다: {cfg_file}")
-
+        print(f"▶ Loading config from: {cfg_file.resolve()}")   # <-- 추가
         data = yaml.safe_load(cfg_file.read_text(encoding="utf-8-sig"))
+        print(f"▶ Raw running_mode = {data.get('running_mode')}")  # <-- 추가
 
         # 필수 키 검증
         try:
