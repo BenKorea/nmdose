@@ -30,3 +30,14 @@ CREATE TABLE IF NOT EXISTS dicom_instances (
 );
 ```
 
+## powershell에서 개발을 파이썬으로 변경하였다.
+
+## 모듈
+모듈파일을 불러오기 위해서 대화형 인터프리터가 해당 폴더에서 열려야 한다.
+
+"import 모듈_이름"으로 불러오기가 된다.
+모듈안의 함수는 도트인자를 사용한다.
+그런데 함수를 직접 import 하면 도트인자없이 사용할 수 있다.
+from 모듈_이름 import 모듈_함수
+
+
