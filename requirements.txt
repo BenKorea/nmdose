@@ -1,7 +1,6 @@
 click==8.1.8
 colorama==0.4.6
 iniconfig==2.1.0
--e git+ssh://git@github.com/BenKorea/nmdose.git@8dbe16131fdb3a68b654985f166f7a63a0802e09#egg=nmdose
 packaging==25.0
 pluggy==1.5.0
 psycopg2==2.9.10

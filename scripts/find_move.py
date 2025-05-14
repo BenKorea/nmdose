@@ -10,9 +10,16 @@ run_findscu.py
 
 import re
 import subprocess
+import sys
 import psycopg2
 import json
 from pathlib import Path
+
+# src 폴더를 sys.path에 추가
+project_root = Path(__file__).resolve().parents[1] / "src"
+sys.path.insert(0, str(project_root))
+
+
 from datetime import datetime, date
 
 from nmdose import (
