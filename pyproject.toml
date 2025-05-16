@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nmdose"
+version = "0.1.0"
+description = "Dose report extraction and analysis for DICOM"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
+dependencies = [
+  "psycopg2-binary>=2.9",
+  "pydicom>=3.0",
+  # 기타 의존 라이브러리
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

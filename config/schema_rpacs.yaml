@@ -24,12 +24,18 @@ tables:
       - name: study_date
         type: date
         comment: "검사 일자 (DICOM StudyDate)"
+      - name: study_time
+        type: time
+        comment: "검사 시간 (DICOM StudyTime)"
       - name: modality
         type: text
         comment: "모델리티 (예: NM, PT)"
       - name: study_description
         type: text
         comment: "검사 설명 (DICOM StudyDescription)"
+      - name: access_number
+        type: text
+        comment: "검사 접근 번호 (DICOM AccessionNumber)"
       - name: referring_physician_name
         type: text
         comment: "의뢰의 이름 (Referring Physician)"
@@ -39,6 +45,63 @@ tables:
       - name: body_part_examined
         type: text
         comment: "검사 부위 (DICOM BodyPartExamined)"
+      - name: num_series
+        type: integer
+        comment: "Series 수 (DICOM NumberOfStudyRelatedSeries)"
+      - name: num_instances
+        type: integer
+        comment: "인스턴스 수 (DICOM NumberOfStudyRelatedInstances)"
+      - name: created_time
+        type: timestamptz
+        default: now()
+        comment: "레코드 생성 시각 (tz 포함)"
+
+  # Preview 단계에서 C-FIND 결과를 저장하는 테이블
+  study_metadata_preview:
+    comment: "Study 레벨 C-FIND(Preview) 결과 저장"
+    columns:
+      - name: study_instance_uid
+        type: text
+        primary_key: true
+        comment: "DICOM StudyInstanceUID (Preview 키)"
+      - name: find_id
+        type: integer
+        foreign_key:
+          table: findscus
+          column: find_id
+          on_delete: set null
+        comment: "참조하는 C-FIND 세션 ID"
+      - name: study_date
+        type: date
+        comment: "검사 일자 (DICOM StudyDate)"
+      - name: study_time
+        type: time
+        comment: "검사 시간 (DICOM StudyTime)"
+      - name: patient_id
+        type: text
+        comment: "환자 ID (DICOM PatientID)"
+      - name: patient_name
+        type: text
+        comment: "환자 이름 (DICOM PatientName)"
+      - name: modalities
+        type: text
+        comment: "모달리티 리스트 (예: PT,NM)"
+      - name: num_series
+        type: integer
+        comment: "Series 수 (DICOM NumberOfStudyRelatedSeries)"
+      - name: num_instances
+        type: integer
+        comment: "인스턴스 수 (DICOM NumberOfStudyRelatedInstances)"
+      - name: study_description
+        type: text
+        comment: "검사 설명 (DICOM StudyDescription)"
+      - name: access_number
+        type: text
+        comment: "검사 접근 번호 (DICOM AccessionNumber)"        
+      - name: created_time
+        type: timestamptz
+        default: now()
+        comment: "레코드 생성 시각 (tz 포함)"
 
   # 배치 처리 상태 저장 테이블
   batch_status:
@@ -63,7 +126,7 @@ tables:
         type: serial
         primary_key: true
         comment: "C-FIND 세션 고유 ID"
-      - name: ts
+      - name: requested_time
         type: timestamptz
         comment: "C-FIND 요청 시각"
       - name: calling_aet
@@ -80,7 +143,7 @@ tables:
         comment: "PACS 포트 번호"
       - name: query_retrieve_level
         type: text
-        comment: "DICOM QueryRetrieveLevel (예: STUDY, SERIES, IMAGE)"        
+        comment: "DICOM QueryRetrieveLevel (예: STUDY, SERIES, IMAGE)"
       - name: start_date
         type: date
         comment: "C-FIND 요청 시작일 (YYYYMMDD)"
@@ -89,7 +152,7 @@ tables:
         comment: "C-FIND 요청 종료일 (YYYYMMDD)"
       - name: modalities_in_study
         type: text
-        comment: "모델리티" 
+        comment: "모달리티"
       - name: result_count
         type: integer
         comment: "C-FIND 결과 건수"
@@ -117,7 +180,7 @@ tables:
         foreign_key:
           table: findscus
           column: find_id
-      - name: ts
+      - name: requested_time
         type: timestamptz
         comment: "C-MOVE 요청 시각"
       - name: calling_aet

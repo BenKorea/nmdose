@@ -14,18 +14,6 @@ import yaml
 import sys
 import psycopg2
 from pathlib import Path
-
-# src 폴더를 sys.path에 추가
-project_root = Path(__file__).resolve().parents[1] / "src"
-sys.path.insert(0, str(project_root))
-
-# 확인 출력
-print(f"▶ 추가된 sys.path: {project_root}")
-print("▶ 현재 sys.path:")
-for p in sys.path:
-    print("  ", p)
-
-# 이제 import 가능
 from nmdose.config_loader.database import get_db_config
 
 
