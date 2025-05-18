@@ -9,7 +9,7 @@ description = "Dose report extraction and analysis for DICOM"
 readme = "README.md"
 license = { text = "MIT" }
 authors = [
-  { name = "Your Name", email = "you@example.com" }
+  { name = "BenKorea", email = "benkorea.ai@gmail.com" }
 ]
 dependencies = [
   "psycopg2-binary>=2.9",
@@ -19,3 +19,9 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+    "integration",
+]

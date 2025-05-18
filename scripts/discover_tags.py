@@ -6,12 +6,12 @@ from nmdose.tasks.findscu_core import discover_allowed_tags
 from nmdose.utils import make_batch_date_range
 
 if __name__ == "__main__":
-    cfg     = get_config()
+    CONFIG     = get_config()
     pacs    = get_pacs_config()
     rcfg    = get_retrieve_config()
     source, target = (
         (pacs.research, pacs.simulation)
-        if cfg.running_mode.lower() == "simulation"
+        if CONFIG.running_mode.lower() == "simulation"
         else (pacs.research, pacs.clinical)
     )
 

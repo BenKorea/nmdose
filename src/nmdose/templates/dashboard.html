@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>NMDose Dashboard</title>
+</head>
+<body>
+  <h1>NMDose 웹 대시보드</h1>
+  <button onclick="startFindscu()">Findscu Preview 실행</button>
+
+  <script>
+    function startFindscu() {
+      fetch("/api/start-findscu", { method: "POST" })
+        .then(res => res.json())
+        .then(data => alert("상태: " + data.status));
+    }
+  </script>
+</body>
+</html>

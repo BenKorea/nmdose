@@ -12,11 +12,14 @@ src/nmdose/config_loader/database.py
 src/nmdose/config_loader/pacs.py
 src/nmdose/config_loader/retrieve.py
 src/nmdose/config_loader/schedule.py
+src/nmdose/env/init.py
 src/nmdose/tasks/__init_.py
-src/nmdose/tasks/findscu_db.py
+src/nmdose/tasks/findscu_core.py
+src/nmdose/tasks/findscu_task.py
 src/nmdose/utils/__init__.py
 src/nmdose/utils/date_utils.py
 src/nmdose/utils/db_utils.py
 src/nmdose/utils/text_utils.py
+tests/test_findscu_core.py
 tests/test_get_config.py
 tests/test_get_db_config.py

@@ -15,13 +15,13 @@ database:
     host: 127.0.0.1
     port: 5432
 """
-    cfg_path = tmp_path / "config.yaml"
-    cfg_path.write_text(content, encoding="utf-8")
+    CONFIG_path = tmp_path / "config.yaml"
+    CONFIG_path.write_text(content, encoding="utf-8")
 
     # 2) loader가 이 파일을 읽도록 환경변수 설정
-    monkeypatch.setenv("NMDOSE_CONFIG", str(cfg_path))
+    monkeypatch.setenv("NMDOSE_CONFIG", str(CONFIG_path))
 
-    return cfg_path
+    return CONFIG_path
 
 def test_get_db_config_defaults(sample_db_config):
     db = get_db_config().rpacs

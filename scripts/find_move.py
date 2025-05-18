@@ -36,7 +36,7 @@ from nmdose import (
 
 # ─── 환경 초기화 ────────────────────────────────────────────────────────────
 def init_environment():
-    cfg     = get_config()
+    CONFIG     = get_config()
     pacs    = get_pacs_config()
     rcfg    = get_retrieve_config()
     sched   = get_schedule_config()
@@ -50,11 +50,11 @@ def init_environment():
     )
     log_dir = Path(r"C:\nmdose\logs\batch")
     log_dir.mkdir(parents=True, exist_ok=True)
-    return cfg, pacs, rcfg, sched, conn, log_dir
+    return CONFIG, pacs, rcfg, sched, conn, log_dir
 
 # ─── PACS 선택 ──────────────────────────────────────────────────────────────
-def select_pacs(cfg, pacs):
-    if cfg.running_mode.lower() == "simulation":
+def select_pacs(CONFIG, pacs):
+    if CONFIG.running_mode.lower() == "simulation":
         return pacs.research, pacs.simulation
     else:
         return pacs.research, pacs.clinical
@@ -166,9 +166,9 @@ def run_retrieve():
     batch_success = 1
 
     # 1) 환경 초기화
-    cfg, pacs, rcfg, sched, conn, log_dir = init_environment()
-    print(f"▶ Running mode: {cfg.running_mode}")
-    source, target = select_pacs(cfg, pacs)
+    CONFIG, pacs, rcfg, sched, conn, log_dir = init_environment()
+    print(f"▶ Running mode: {CONFIG.running_mode}")
+    source, target = select_pacs(CONFIG, pacs)
 
     print(target)
     date_range     = make_batch_date_range()

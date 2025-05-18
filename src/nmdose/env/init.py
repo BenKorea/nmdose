@@ -17,7 +17,7 @@ def init_environment():
     설정 파일을 로드하고, PACS 엔드포인트, 조회 파라미터, DB 커넥션 및 로그 디렉터리를 초기화합니다.
 
     반환:
-      cfg: 전체 설정
+      CONFIG: 전체 설정
       calling: C-FIND 요청 SCU AET/IP/Port
       called: C-FIND 대상 PACS AET/IP/Port
       modalities: 조회할 modality 리스트
@@ -26,17 +26,17 @@ def init_environment():
       log_dir: 로그 파일을 저장할 디렉터리 경로
     """
     # 기본 설정 로드
-    cfg     = get_config()
+    CONFIG     = get_config()
     pacs    = get_pacs_config()
     rcfg    = get_retrieve_config()
     sched   = get_schedule_config()
     db_conf = get_db_config().rpacs
 
     # 실행 모드 출력
-    print(f"▶ Running mode: {cfg.running_mode}")
+    print(f"▶ Running mode: {CONFIG.running_mode}")
 
     # PACS 엔드포인트 선택
-    if cfg.running_mode.lower() == "simulation":
+    if CONFIG.running_mode.lower() == "simulation":
         calling, called = pacs.research, pacs.simulation
     else:
         calling, called = pacs.research, pacs.clinical
@@ -64,4 +64,4 @@ def init_environment():
     log_dir.mkdir(parents=True, exist_ok=True)
     print(f"▶ Log directory: {log_dir}")
 
-    return cfg, calling, called, modalities, date_range, conn, log_dir
+    return CONFIG, calling, called, modalities, date_range, conn, log_dir

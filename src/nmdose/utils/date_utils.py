@@ -1,7 +1,6 @@
 # src/nmdose/utils/date_utils.py
 
-from datetime import datetime, date
-from datetime import timedelta
+from datetime import datetime, date, timedelta
 from dateutil import parser
 import psycopg2
 from nmdose import get_schedule_config, get_db_config

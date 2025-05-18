@@ -14,13 +14,13 @@ from nmdose.config_loader import get_config, get_pacs_config
 
 def main():
     # 1) 실행 모드 읽어서 PACS 선택
-    cfg      = get_config()
+    CONFIG      = get_config()
     pacs_all = get_pacs_config()
-    if cfg.running_mode.lower() == "simulation":
+    if CONFIG.running_mode.lower() == "simulation":
         pacs = pacs_all.simulation
     else:
         pacs = pacs_all.clinical
-    print(f"▶ Running mode: {cfg.running_mode} → using PACS: {pacs.aet}@{pacs.ip}:{pacs.port}")
+    print(f"▶ Running mode: {CONFIG.running_mode} → using PACS: {pacs.aet}@{pacs.ip}:{pacs.port}")
 
     # 2) 여기서부터는 원하는 findscu 인자를 직접 cmd 리스트에 입력하세요
     cmd = [

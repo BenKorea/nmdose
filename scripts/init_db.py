@@ -17,6 +17,50 @@ from pathlib import Path
 from nmdose.config_loader.database import get_db_config
 
 
+def ensure_user(username: str, admin_cfg):
+    """
+    postgres 슈퍼유저로 접속해 사용자 계정(nmuser 등)이 없으면 생성합니다.
+    비밀번호는 username과 동일하게 설정됩니다.
+    """
+    conn = psycopg2.connect(
+        dbname=admin_cfg.database,
+        host=admin_cfg.host,
+        port=admin_cfg.port,
+        user=admin_cfg.user,
+        password=admin_cfg.user
+    )
+    conn.autocommit = True
+    with conn.cursor() as cur:
+        cur.execute("SELECT 1 FROM pg_roles WHERE rolname = %s", (username,))
+        if not cur.fetchone():
+            print(f"▶ Creating user '{username}'...")
+            cur.execute(f"CREATE USER {username} WITH PASSWORD %s;", (username,))
+            print(f"   ✓ User '{username}' created.")
+        else:
+            print(f"▶ User '{username}' already exists.")
+    conn.close()
+
+
+def grant_schema_privileges_on_all(admin_cfg, username: str, db_names: list[str], schema: str = "public"):
+    """
+    모든 대상 DB의 public 스키마에 대해 CREATE 권한을 부여합니다.
+    """
+    for dbname in db_names:
+        conn = psycopg2.connect(
+            dbname=dbname,
+            host=admin_cfg.host,
+            port=admin_cfg.port,
+            user=admin_cfg.user,
+            password=admin_cfg.user
+        )
+        conn.autocommit = True
+        with conn.cursor() as cur:
+            print(f"▶ Granting CREATE ON SCHEMA {schema} TO {username} in DB '{dbname}'...")
+            cur.execute(f"GRANT CREATE ON SCHEMA {schema} TO {username};")
+            print(f"   ✓ Granted in '{dbname}'.")
+        conn.close()
+
+
 
 
 def ensure_database(name: str, admin_cfg):
@@ -79,15 +123,32 @@ def main():
     rpacs_cfg  = dbs.rpacs         # nmuser RPACS용
     nmdose_cfg = dbs.nmdose        # nmuser NMDOSE용
 
+    # 1.5) 사용자 계정이 없으면 생성
+    ensure_user(rpacs_cfg.user, admin_cfg)
+
+    # 1.6) 스키마 권한 부여 (rpacs, nmdose 모두에 대해)
+    grant_schema_privileges_on_all(
+        admin_cfg,
+        rpacs_cfg.user,
+        [rpacs_cfg.database, nmdose_cfg.database]
+   )
+
+
+
+
     # 2) 스키마 정의 로드
     schema_file = Path(__file__).parent.parent / "config" / "schema_rpacs.yaml"
     if not schema_file.is_file():
         raise FileNotFoundError(f"Schema file not found: {schema_file}")
     schema_data = yaml.safe_load(schema_file.read_text(encoding="utf-8-sig"))
 
-    # 3) 데이터베이스 생성 (슈퍼유저)
-    for dbname in (rpacs_cfg.database, nmdose_cfg.database):
-        ensure_database(dbname, admin_cfg)
+    # 1.6) 스키마 권한 부여 (rpacs, nmdose 모두에 대해)
+    grant_schema_privileges_on_all(
+        admin_cfg,
+        rpacs_cfg.user,
+        [rpacs_cfg.database, nmdose_cfg.database]
+   )
+
 
     # 4) RPACS 스키마 테이블 생성 (nmuser)
     ensure_tables(rpacs_cfg, schema_data["tables"])
