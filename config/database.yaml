@@ -9,9 +9,3 @@ rpacs:
   user:     nmuser         # 일반 애플리케이션 계정
   host:     127.0.0.1
   port:     5432
-
-nmdose:
-  database: nmdose
-  user:     nmuser
-  host:     127.0.0.1
-  port:     5432

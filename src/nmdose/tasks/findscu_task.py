@@ -16,21 +16,21 @@ from nmdose.utils import (
 
 def init_environment():
     CONFIG = get_config()
-    pacs = get_pacs_config()
-    rcfg = get_retrieve_config()
-    sched = get_schedule_config()
+    PACS = get_pacs_config()
+    RETRIEVE_CONFIG = get_retrieve_config()
+    SCHEDULE_CONFIG = get_schedule_config()
 
     log_dir = Path(r"C:\nmdose\logs\batch")
     log_dir.mkdir(parents=True, exist_ok=True)
 
-    return CONFIG, pacs, rcfg, sched, log_dir
+    return CONFIG, PACS, RETRIEVE_CONFIG, SCHEDULE_CONFIG, log_dir
 
 
-def select_pacs(CONFIG, pacs):
+def select_pacs(CONFIG, PACS):
     if CONFIG.running_mode.lower() == "simulation":
-        return pacs.research, pacs.simulation
+        return PACS.research, PACS.simulation
     else:
-        return pacs.research, pacs.clinical
+        return PACS.research, PACS.clinical
 
 
 def run_process(cmd: list[str]) -> tuple[str, str]:
@@ -54,12 +54,12 @@ def save_logs(log_dir, mode, modality: str, ts_start: datetime, std_text: str):
 
 def run_findscu():
     """C-FIND 검색을 수행하고 전체 응답과 UID 리스트를 반환합니다."""
-    CONFIG, pacs, rcfg, sched, log_dir = init_environment()
+    CONFIG, PACS, RETRIEVE_CONFIG, SCHEDULE_CONFIG, log_dir = init_environment()
     print(f"▶ Running mode: {CONFIG.running_mode}")
-    source, target = select_pacs(CONFIG, pacs)
+    source, target = select_pacs(CONFIG, PACS)
 
     date_range = make_batch_date_range()
-    modalities = rcfg.clinical_to_research.modalities
+    modalities = RETRIEVE_CONFIG.clinical_to_research.modalities
 
     all_responses = []  # 전체 응답 저장
     all_uids = []

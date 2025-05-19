@@ -15,20 +15,20 @@ from nmdose.config_loader import get_config, get_pacs_config
 def main():
     # 1) 실행 모드 읽어서 PACS 선택
     CONFIG      = get_config()
-    pacs_all = get_pacs_config()
+    PACS_all = get_pacs_config()
     if CONFIG.running_mode.lower() == "simulation":
-        pacs = pacs_all.simulation
+        PACS = PACS_all.simulation
     else:
-        pacs = pacs_all.clinical
-    print(f"▶ Running mode: {CONFIG.running_mode} → using PACS: {pacs.aet}@{pacs.ip}:{pacs.port}")
+        PACS = PACS_all.clinical
+    print(f"▶ Running mode: {CONFIG.running_mode} → using PACS: {PACS.aet}@{PACS.ip}:{PACS.port}")
 
     # 2) 여기서부터는 원하는 findscu 인자를 직접 cmd 리스트에 입력하세요
     cmd = [
         "findscu",
         "-v", "-S",
-        "-aet", pacs.aet,          # 내 AET
-        "-aec", pacs.aet,          # 원격 AET (같은 경우가 많음)
-        pacs.ip, str(pacs.port),   # PACS IP, Port
+        "-aet", PACS.aet,          # 내 AET
+        "-aec", PACS.aet,          # 원격 AET (같은 경우가 많음)
+        PACS.ip, str(PACS.port),   # PACS IP, Port
         "-k", "QueryRetrieveLevel=STUDY",
         "-k", "StudyDate=20250101-20250502",
         "-k", "ModalitiesInStudy=PT",

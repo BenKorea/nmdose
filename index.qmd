@@ -1,7 +1,7 @@
 ## 실행명령목록
 
-```{r init-orthanc, eval=FALSE, filename="PowerShell"}
-C:\nmdose\bin\init_postgresql.ps1
+```{r web-interface, eval=FALSE, filename="vs code 터미널"}
+uvicorn nmdose.main:app --reload --host 127.0.0.1 --port 8001
 ```
 
 ```{r to-orthanc, eval=FALSE, filename="PowerShell"}

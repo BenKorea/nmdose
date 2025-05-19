@@ -1,0 +1,267 @@
+# config/database_schema.yaml
+
+schema:
+
+  rpacs:  # 연구용 PACS 메타데이터
+    tables:
+
+      study_metadata:
+        comment: "NM/PT 검사에 대한 메타데이터 저장 (ORTHANC 기반 분석용)"
+        columns:
+          - name: study_instance_uid
+            type: text
+            primary_key: true
+            comment: "DICOM StudyInstanceUID (고유 식별자)"
+          - name: patient_id
+            type: text
+            comment: "환자 ID (DICOM PatientID)"
+          - name: patient_sex
+            type: text
+            comment: "환자 성별 (DICOM PatientSex: M/F/O)"
+          - name: patient_birth_date
+            type: date
+            comment: "환자 생년월일 (DICOM PatientBirthDate)"
+          - name: patient_age
+            type: text
+            comment: "환자 나이 (DICOM PatientAge, 형식: 045Y 등)"
+          - name: study_date
+            type: date
+            comment: "검사 일자 (DICOM StudyDate)"
+          - name: study_time
+            type: time
+            comment: "검사 시간 (DICOM StudyTime)"
+          - name: modality
+            type: text
+            comment: "모델리티 (예: NM, PT)"
+          - name: study_description
+            type: text
+            comment: "검사 설명 (DICOM StudyDescription)"
+          - name: access_number
+            type: text
+            comment: "검사 접근 번호 (DICOM AccessionNumber)"
+          - name: referring_physician_name
+            type: text
+            comment: "의뢰의 이름 (Referring Physician)"
+          - name: institution_name
+            type: text
+            comment: "검사를 수행한 기관명"
+          - name: body_part_examined
+            type: text
+            comment: "검사 부위 (DICOM BodyPartExamined)"
+          - name: num_series
+            type: integer
+            comment: "Series 수 (DICOM NumberOfStudyRelatedSeries)"
+          - name: num_instances
+            type: integer
+            comment: "인스턴스 수 (DICOM NumberOfStudyRelatedInstances)"
+          - name: created_time
+            type: timestamptz
+            default: now()
+            comment: "레코드 생성 시각 (tz 포함)"
+
+      study_metadata_preview:
+        comment: "Study 레벨 C-FIND(Preview) 결과 저장"
+        columns:
+          - name: study_instance_uid
+            type: text
+            primary_key: true
+            comment: "DICOM StudyInstanceUID (Preview 키)"
+          - name: find_id
+            type: integer
+            foreign_key:
+              table: findscus
+              column: find_id
+              on_delete: set null
+            comment: "참조하는 C-FIND 세션 ID"
+          - name: study_date
+            type: date
+            comment: "검사 일자 (DICOM StudyDate)"
+          - name: study_time
+            type: time
+            comment: "검사 시간 (DICOM StudyTime)"
+          - name: patient_id
+            type: text
+            comment: "환자 ID (DICOM PatientID)"
+          - name: patient_name
+            type: text
+            comment: "환자 이름 (DICOM PatientName)"
+          - name: modalities
+            type: text
+            comment: "모달리티 리스트 (예: PT,NM)"
+          - name: num_series
+            type: integer
+            comment: "Series 수 (DICOM NumberOfStudyRelatedSeries)"
+          - name: num_instances
+            type: integer
+            comment: "인스턴스 수 (DICOM NumberOfStudyRelatedInstances)"
+          - name: study_description
+            type: text
+            comment: "검사 설명 (DICOM StudyDescription)"
+          - name: access_number
+            type: text
+            comment: "검사 접근 번호 (DICOM AccessionNumber)"
+          - name: created_time
+            type: timestamptz
+            default: now()
+            comment: "레코드 생성 시각 (tz 포함)"
+
+      batch_status:
+        comment: "배치 처리 상태 저장 (마지막 처리 날짜 기록용)"
+        columns:
+          - name: process_name
+            type: text
+            primary_key: true
+            comment: "배치 작업 고유 이름 (예: 'night_batch')"
+          - name: last_processed_date
+            type: date
+            comment: "마지막으로 처리된 날짜"
+          - name: updated_at
+            type: timestamptz
+            comment: "레코드 업데이트 시각"
+
+      findscus:
+        comment: "C-FIND (DIMSE) 세션 감사 로그"
+        columns:
+          - name: find_id
+            type: serial
+            primary_key: true
+            comment: "C-FIND 세션 고유 ID"
+          - name: requested_time
+            type: timestamptz
+            comment: "C-FIND 요청 시각"
+          - name: calling_aet
+            type: text
+            comment: "발신 AE Title"
+          - name: called_aet
+            type: text
+            comment: "수신 AE Title"
+          - name: peer_host
+            type: inet
+            comment: "PACS 호스트 주소"
+          - name: peer_port
+            type: integer
+            comment: "PACS 포트 번호"
+          - name: query_retrieve_level
+            type: text
+            comment: "DICOM QueryRetrieveLevel (예: STUDY, SERIES, IMAGE)"
+          - name: start_date
+            type: date
+            comment: "C-FIND 요청 시작일 (YYYYMMDD)"
+          - name: end_date
+            type: date
+            comment: "C-FIND 요청 종료일 (YYYYMMDD)"
+          - name: modalities_in_study
+            type: text
+            comment: "모달리티"
+          - name: result_count
+            type: integer
+            comment: "C-FIND 결과 건수"
+          - name: duration_ms
+            type: integer
+            comment: "처리 소요 시간 (밀리초)"
+          - name: status
+            type: text
+            comment: "성공/실패 상태 (e.g. SUCCESS, FAILURE)"
+          - name: error_detail
+            type: text
+            comment: "에러 코드 및 메시지"
+
+      movescus:
+        comment: "C-MOVE (DIMSE) 개별 요청 감사 로그"
+        columns:
+          - name: move_id
+            type: serial
+            primary_key: true
+            comment: "C-MOVE 요청 고유 ID"
+          - name: find_id
+            type: integer
+            comment: "참조하는 C-FIND 세션 ID"
+            foreign_key:
+              table: findscus
+              column: find_id
+          - name: requested_time
+            type: timestamptz
+            comment: "C-MOVE 요청 시각"
+          - name: calling_aet
+            type: text
+            comment: "발신 AE Title"
+          - name: called_aet
+            type: text
+            comment: "수신 AE Title"
+          - name: peer_host
+            type: inet
+            comment: "PACS 호스트 주소"
+          - name: peer_port
+            type: integer
+            comment: "PACS 포트 번호"
+          - name: pending_count
+            type: integer
+            comment: "받은 PENDING 응답 건수"
+          - name: duration_ms
+            type: integer
+            comment: "처리 소요 시간 (밀리초)"
+          - name: status
+            type: text
+            comment: "성공/실패 상태 (e.g. SUCCESS, FAILURE)"
+          - name: error_detail
+            type: text
+            comment: "에러 코드 및 메시지"
+          - name: study_instance_uid
+            type: text
+            comment: "StudyInstanceUID (DICOM StudyInstanceUID)"
+        unique_constraints:
+          - [find_id, study_instance_uid]
+
+  dosepacs:  # 선량 정보 저장용
+    tables:
+
+      dose_statistics:
+        comment: "SR 시리즈에서 추출한 방사선 선량 정보 저장 테이블"
+        columns:
+          - name: study_instance_uid
+            type: text
+            primary_key: true
+            comment: "DICOM StudyInstanceUID (고유 식별자)"
+          - name: series_instance_uid
+            type: text
+            comment: "SR 시리즈의 SeriesInstanceUID"
+          - name: sop_instance_uid
+            type: text
+            comment: "SR 객체의 SOPInstanceUID"
+          - name: modality
+            type: text
+            comment: "SR 또는 RDSR"
+          - name: study_date
+            type: date
+            comment: "검사 날짜"
+          - name: patient_id
+            type: text
+            comment: "환자 ID"
+          - name: patient_sex
+            type: text
+            comment: "환자 성별"
+          - name: patient_birth_date
+            type: date
+            comment: "환자 생년월일"
+          - name: patient_age
+            type: text
+            comment: "환자 나이 (DICOM 형식)"
+          - name: body_part_examined
+            type: text
+            comment: "검사 부위"
+          - name: manufacturer
+            type: text
+            comment: "장비 제조사"
+          - name: model_name
+            type: text
+            comment: "장비 모델명"
+          - name: dose_data
+            type: jsonb
+            comment: "DLP, CTDIvol, Acquisition Parameters 등 선량 세부 정보 (JSON 형식)"
+          - name: extracted_by
+            type: text
+            comment: "데이터 추출에 사용된 코드 버전 또는 도구 이름"
+          - name: extracted_at
+            type: timestamp
+            default: now()
+            comment: "데이터가 추출되어 저장된 시간"

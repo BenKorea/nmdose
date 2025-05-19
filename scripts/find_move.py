@@ -37,9 +37,9 @@ from nmdose import (
 # ─── 환경 초기화 ────────────────────────────────────────────────────────────
 def init_environment():
     CONFIG     = get_config()
-    pacs    = get_pacs_config()
-    rcfg    = get_retrieve_config()
-    sched   = get_schedule_config()
+    PACS    = get_pacs_config()
+    RETRIEVE_CONFIG    = get_retrieve_config()
+    SCHEDULE_CONFIG   = get_schedule_config()
     db_conf = get_db_config().rpacs
     conn = psycopg2.connect(
         dbname=db_conf.database,
@@ -50,14 +50,14 @@ def init_environment():
     )
     log_dir = Path(r"C:\nmdose\logs\batch")
     log_dir.mkdir(parents=True, exist_ok=True)
-    return CONFIG, pacs, rcfg, sched, conn, log_dir
+    return CONFIG, PACS, RETRIEVE_CONFIG, SCHEDULE_CONFIG, conn, log_dir
 
 # ─── PACS 선택 ──────────────────────────────────────────────────────────────
-def select_pacs(CONFIG, pacs):
+def select_pacs(CONFIG, PACS):
     if CONFIG.running_mode.lower() == "simulation":
-        return pacs.research, pacs.simulation
+        return PACS.research, PACS.simulation
     else:
-        return pacs.research, pacs.clinical
+        return PACS.research, PACS.clinical
 
 # ─── 서브프로세스 실행 ──────────────────────────────────────────────────────
 def run_process(cmd: list[str]) -> tuple[str, str]:
@@ -166,13 +166,13 @@ def run_retrieve():
     batch_success = 1
 
     # 1) 환경 초기화
-    CONFIG, pacs, rcfg, sched, conn, log_dir = init_environment()
+    CONFIG, PACS, RETRIEVE_CONFIG, SCHEDULE_CONFIG, conn, log_dir = init_environment()
     print(f"▶ Running mode: {CONFIG.running_mode}")
-    source, target = select_pacs(CONFIG, pacs)
+    source, target = select_pacs(CONFIG, PACS)
 
     print(target)
     date_range     = make_batch_date_range()
-    modalities     = rcfg.clinical_to_research.modalities
+    modalities     = RETRIEVE_CONFIG.clinical_to_research.modalities
 
     all_uids = []
     # 2) C-FIND (모달리티별)

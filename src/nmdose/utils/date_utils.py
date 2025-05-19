@@ -14,10 +14,10 @@ def make_batch_date_range() -> str:
     'YYYYMMDD-YYYYMMDD' 형태의 문자열을 반환한다.
     """
     # 1) 설정에서 시작일, 배치 일수, daily start 읽기
-    sched            = get_schedule_config()
-    start_str        = sched.batch_retrieving.start_date   # e.g. "20240222"
-    batch_days       = sched.batch_retrieving.batch_days   # 예: 7
-    daily_start_str  = sched.daily_retrieving.start_date   # e.g. "20250508"
+    SCHEDULE_CONFIG            = get_schedule_config()
+    start_str        = SCHEDULE_CONFIG.batch_retrieving.start_date   # e.g. "20240222"
+    batch_days       = SCHEDULE_CONFIG.batch_retrieving.batch_days   # 예: 7
+    daily_start_str  = SCHEDULE_CONFIG.daily_retrieving.start_date   # e.g. "20250508"
 
     # 2) 문자열 → date
     start_dt        = parser.parse(start_str).date()
