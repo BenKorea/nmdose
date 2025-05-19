@@ -5,7 +5,7 @@ uvicorn nmdose.main:app --reload --host 127.0.0.1 --port 8001
 ```
 
 ```{r to-orthanc, eval=FALSE, filename="PowerShell"}
-C:\nmdose\bin\copy_to_orthanc.ps1
+python src/nmdose/run.py --loglevel debug
 ```
 
 ```{r to-nmdose, eval=FALSE, filename="PowerShell"}
