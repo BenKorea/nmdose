@@ -1,20 +1,17 @@
-# File: src/nmdose/env/init.py
+# src/nmdose/env/init.py
 
 # ───── 표준 라이브러리 ─────
-from pathlib import Path
 import os
-
-# ───── 서드파티 라이브러리 ─────
+from pathlib import Path
 import logging
 
+# ───── 내부 모듈 ─────
 from nmdose.config_loader.dotenv_loader import init_dotenv
-from nmdose import (
-    get_pacs_config,
-    get_retrieve_options_config,
-    make_batch_date_range,
-)
+from nmdose.config_loader.retrieve_options_loader import get_retrieve_options_config
+from nmdose.config_loader.dicom_network_entities_loader import get_dicom_network_entities_config
+from nmdose.utils.date_utils import make_batch_date_range
 
-# 로거 생성
+# ───── 로거 객체 생성 ─────
 log = logging.getLogger(__name__)
 
 
@@ -29,11 +26,11 @@ def init_environment():
       date_range: StudyDate 범위 문자열
       log_dir: 로그 파일을 저장할 디렉터리 경로
     """
-    # ① .env 파일부터 로드 (환경변수 우선)
+    # .env 파일부터 로드 (환경변수 우선)
     init_dotenv()
 
-    # ② PACS 및 retrieve 설정 로드
-    PACS             = get_pacs_config()
+    # PACS 및 retrieve 설정 로드
+    PACS             = get_dicom_network_entities_config()
     RETRIEVE_OPTIONS = get_retrieve_options_config()
 
     # PACS 엔드포인트 선택 (RUNNING_MODE env var 기반)
@@ -47,12 +44,12 @@ def init_environment():
     # 조회할 modalities 및 날짜 범위
     modalities = RETRIEVE_OPTIONS.retrieve_to_research.modalities
     date_range = make_batch_date_range()
-    print(f"▶ Modalities to query: {modalities}")
-    print(f"▶ StudyDate range: {date_range}")
+    log.info(f"조회할 Modalities: {modalities}")
+    log.info(f"StudyDate 범위: {date_range}")
 
     # 로그 디렉터리 생성
     log_dir = Path(r"C:\nmdose\logs\batch")
     log_dir.mkdir(parents=True, exist_ok=True)
-    print(f"▶ Log directory: {log_dir}")
+    log.info(f"Log 디렉터리 생성됨: {log_dir}")
 
     return calling, called, modalities, date_range, log_dir

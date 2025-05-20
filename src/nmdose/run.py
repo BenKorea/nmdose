@@ -1,9 +1,16 @@
 # src/nmdose/run.py
 
+# ───── 표준 라이브러리 ─────
 import argparse
-import os
 import logging
+import os
+
+# ───── 서드파티 라이브러리 ─────
 import uvicorn
+
+# ───── 로거 객체 생성 ─────
+log = logging.getLogger(__name__)
+
 
 def main():
     # 1. 인자 파싱
@@ -28,18 +35,18 @@ def main():
     logging.getLogger("uvicorn.error").setLevel(args.loglevel.upper())
     logging.getLogger("uvicorn.access").setLevel(args.loglevel.upper())
 
-    # ✅ 로깅 레벨 명시적으로 출력
-    print(f"▶ 환경변수 NMDOSE_LOGLEVEL = {os.environ['NMDOSE_LOGLEVEL']}")
+    # 로깅 레벨 명시적으로 출력
+    log.info(f"환경변수 NMDOSE_LOGLEVEL = {os.environ['NMDOSE_LOGLEVEL']}")
 
-    
     # 4. 서버 실행
     uvicorn.run(
         "nmdose.main:app",
         host="127.0.0.1",
         port=8001,
         reload=False,
-        log_level=args.loglevel  # ✅ uvicorn 자체 log_level 옵션도 연동
+        log_level=args.loglevel  # uvicorn 자체 log_level 옵션도 연동
     )
+
 
 if __name__ == "__main__":
     main()
