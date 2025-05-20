@@ -1,0 +1,28 @@
+retrieve_to_research:
+  modalities: ["PT", "NM"]
+
+  enable_exclusion: true
+  excluded_tag: study_description
+  excluded_word: outside
+
+  batch_start_date: "20240101"
+  batch_start_time: "02:00"
+  batch_end_time: "06:00"
+  batch_days: 5
+
+  daily_start_date: "20250618"
+  daily_start_time: "08:00"
+  daily_end_time: "18:00"
+  daily_time_interval: 60
+
+retrieve_to_dose:
+  ct_enable_modalities_in_series: true
+  ct_modalities_in_series: ["SR"]
+
+  ct_enable_series_description: true
+  ct_series_description: ["Dose Report", "Patient Protocol"]
+
+  ct_enable_series_number: true
+  ct_series_number: ["501", "999"]
+
+  pet_enable_single_axial_first_image: true

@@ -1,5 +1,0 @@
-# running_mode: simulation = 개발 모드 (simulationPACS 사용), clinical = 운영 모드 (clinicalPACS 사용)
-running_mode: simulation
-
-logging_mode: DEBUG
-

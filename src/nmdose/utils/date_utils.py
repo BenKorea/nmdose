@@ -3,27 +3,30 @@
 from datetime import datetime, date, timedelta
 from dateutil import parser
 import psycopg2
-from nmdose import get_schedule_config, get_db_config
+
+from nmdose import get_retrieve_options_config, get_db_config
+
 
 def make_batch_date_range() -> str:
     """
-    schedule.batch_retrieving.start_date를 기준으로
-    schedule.batch_retrieving.batch_days만큼 더한 종료 날짜를 계산하고,
-    데이터베이스의 last_processed_date가 존재하면 이를 시작일로 사용하며,
-    daily_retrieving.start_date를 넘지 않도록 보정한
-    'YYYYMMDD-YYYYMMDD' 형태의 문자열을 반환한다.
+    retrieve_options.retrieve_to_research.* 설정을 기반으로 날짜 범위를 계산합니다.
+    DB의 마지막 처리일이 있으면 이를 기준으로 시작일을 정하며,
+    일일 시작일을 넘지 않도록 종료일을 제한합니다.
+    반환값: 'YYYYMMDD-YYYYMMDD' 문자열
     """
-    # 1) 설정에서 시작일, 배치 일수, daily start 읽기
-    SCHEDULE_CONFIG            = get_schedule_config()
-    start_str        = SCHEDULE_CONFIG.batch_retrieving.start_date   # e.g. "20240222"
-    batch_days       = SCHEDULE_CONFIG.batch_retrieving.batch_days   # 예: 7
-    daily_start_str  = SCHEDULE_CONFIG.daily_retrieving.start_date   # e.g. "20250508"
+    RETRIEVE_OPTIONS = get_retrieve_options_config()
+    cfg = RETRIEVE_OPTIONS.retrieve_to_research
 
-    # 2) 문자열 → date
-    start_dt        = parser.parse(start_str).date()
-    daily_start_dt  = parser.parse(daily_start_str).date()
+    # 설정값 파싱
+    start_str       = cfg.batch_start_date      # 예: "20240222"
+    batch_days      = cfg.batch_days            # 예: 7
+    daily_start_str = cfg.daily_start_date      # 예: "20250508"
 
-    # 3) DB에서 마지막 처리일 조회
+    # 문자열 → 날짜 객체
+    start_dt       = parser.parse(start_str).date()
+    daily_start_dt = parser.parse(daily_start_str).date()
+
+    # DB에서 마지막 처리일 조회
     db_conf = get_db_config().rpacs
     conn = psycopg2.connect(
         host=db_conf.host,
@@ -44,53 +47,29 @@ def make_batch_date_range() -> str:
     last_processed_dt = None
     if row and row[0]:
         raw = row[0]
-        if isinstance(raw, date):
-            last_processed_dt = raw
-        else:
-            last_processed_dt = parser.parse(str(raw)).date()
+        last_processed_dt = raw if isinstance(raw, date) else parser.parse(str(raw)).date()
 
-    # 4) effective_start 결정
+    # 시작일 결정
     effective_start = (
-        last_processed_dt
-        if last_processed_dt and last_processed_dt >= start_dt
-        else start_dt
+        last_processed_dt if last_processed_dt and last_processed_dt >= start_dt else start_dt
     )
 
-    # 5) batch_days 만큼 더한 후보 종료일
+    # 종료일 계산
     candidate_end = effective_start + timedelta(days=batch_days - 1)
+    effective_end = min(candidate_end, daily_start_dt)
 
-    # 6) 유효 종료일: daily_start_dt보다 늦으면 daily_start_dt, 아니면 candidate_end
-    effective_end = (
-        daily_start_dt
-        if candidate_end >= daily_start_dt
-        else candidate_end
-    )
-
-    # 7) 포맷팅
+    # 포맷 변환
     start_fmt = effective_start.strftime("%Y%m%d")
     end_fmt   = effective_end.strftime("%Y%m%d")
 
     return f"{start_fmt}-{end_fmt}"
 
+
 def parse_start_date(range_str: str) -> date:
-    """
-    "YYYYMMDD-YYYYMMDD" 형식의 문자열에서
-    앞 8자리를 파싱하여 date 객체로 반환합니다.
-    """
-    # 1) 하이픈(-) 기준으로 나누기
-    start_str = range_str.split("-", 1)[0]
-    # 2) 문자열을 date 로 변환
-    return datetime.strptime(start_str, "%Y%m%d").date()
+    """'YYYYMMDD-YYYYMMDD' 형식에서 시작일 추출"""
+    return datetime.strptime(range_str.split("-", 1)[0], "%Y%m%d").date()
 
 
 def parse_end_date(range_str: str) -> date:
-    """
-    "YYYYMMDD-YYYYMMDD" 형식의 문자열에서
-    뒤 8자리를 파싱하여 date 객체로 반환합니다.
-    """
-    # 1) 하이픈 이후 문자열
-    #    split 대신 슬라이싱(range_str[-8:])을 써도 무방합니다.
-    end_str = range_str.split("-", 1)[1]
-    # 2) 문자열을 date 로 변환
-    return datetime.strptime(end_str, "%Y%m%d").date()
-
+    """'YYYYMMDD-YYYYMMDD' 형식에서 종료일 추출"""
+    return datetime.strptime(range_str.split("-", 1)[1], "%Y%m%d").date()
