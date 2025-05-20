@@ -99,7 +99,7 @@ def run_findscu_preview(modality, calling, called, date_range, standard_tags):
 
 def main():
     # 환경 초기화 (DB 연결은 이 스크립트에서 사용하지 않으므로 제외)
-    CONFIG, calling, called, modalities, date_range, log_dir = init_environment()
+    calling, called, modalities, date_range, log_dir = init_environment()
     tags = get_standard_study_tags()
     for modality in modalities:
         run_findscu_preview(modality, calling, called, date_range, tags)

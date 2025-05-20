@@ -1,8 +1,13 @@
 # File: src/nmdose/env/init.py
+
+# ───── 표준 라이브러리 ─────
 from pathlib import Path
 import os
-from nmdose.config_loader.dotenv_loader import init_dotenv
 
+# ───── 서드파티 라이브러리 ─────
+import logging
+
+from nmdose.config_loader.dotenv_loader import init_dotenv
 from nmdose import (
     get_config,
     get_pacs_config,
@@ -11,6 +16,8 @@ from nmdose import (
     make_batch_date_range,
 )
 
+# 로거 생성
+log = logging.getLogger(__name__)
 
 def init_environment():
     """
@@ -26,25 +33,21 @@ def init_environment():
     """
     # ① .env 파일부터 로드 (환경변수 우선)
     init_dotenv()
-    # 로드된 주요 환경변수 값 출력
-    print(f"▶ ENV RUNNING_MODE = {os.getenv('RUNNING_MODE')}")
 
     # ② 기본 설정 로드
-    CONFIG        = get_config()
     PACS          = get_pacs_config()
     RETRIEVE_CFG  = get_retrieve_config()
     SCHEDULE_CFG  = get_schedule_config()
 
-    # 실행 모드 출력
-    print(f"▶ Running mode: {CONFIG.running_mode}")
 
-    # PACS 엔드포인트 선택
-    if CONFIG.running_mode.lower() == "simulation":
+
+    # PACS 엔드포인트 선택 (RUNNING_MODE env var 기반)
+    rm = os.getenv("RUNNING_MODE")
+    log.info(f"▶ ENV RUNNING_MODE = {rm}")
+    if rm == "1":
         calling, called = PACS.research, PACS.simulation
     else:
         calling, called = PACS.research, PACS.clinical
-    print(f"▶ calling AET: {calling.aet}, IP: {calling.ip}, Port: {calling.port}")
-    print(f"▶ called AET: {called.aet}, IP: {called.ip}, Port: {called.port}")
 
     # 조회할 modalities, 날짜 범위
     modalities = RETRIEVE_CFG.clinical_to_research.modalities
@@ -57,4 +60,4 @@ def init_environment():
     log_dir.mkdir(parents=True, exist_ok=True)
     print(f"▶ Log directory: {log_dir}")
 
-    return CONFIG, calling, called, modalities, date_range, log_dir
+    return calling, called, modalities, date_range, log_dir

@@ -12,12 +12,15 @@ from nmdose.utils.logging_utils import configure_logging
 
 # ─────────────────────────────
 # 1) 애플리케이션 환경 일괄 초기화
-CONFIG, CALLING, CALLED, MODALITIES, DATE_RANGE, LOG_DIR = init_environment()
+CALLING, CALLED, MODALITIES, DATE_RANGE, LOG_DIR = init_environment()
 
-# 2) 로깅 설정
-configure_logging(CONFIG.logging_mode)
-log = logging.getLogger(__name__)
-log.info("▶ FastAPI 앱 초기화 완료")
+log = logging.getLogger(__name__)   # ← 여기에 logger 선언만 추가
+
+
+# # 2) 로깅 설정
+# configure_logging(CONFIG.logging_mode)
+# log = logging.getLogger(__name__)
+# log.info("▶ FastAPI 앱 초기화 완료")
 
 # 3) FastAPI 앱 생성 및 템플릿 설정
 app = FastAPI()
@@ -30,7 +33,7 @@ async def dashboard(request: Request):
     log.debug("▶ 대시보드 호출됨")
     # 필요 시 템플릿에 설정값 전달 가능
     return templates.TemplateResponse(
-        "dashboard.html", {"request": request, "config": CONFIG}
+        "dashboard.html", {"request": request}
     )
 
 def run_findscu(calling=CALLING, called=CALLED):

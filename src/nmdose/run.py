@@ -1,6 +1,7 @@
 # src/nmdose/run.py
 
 import argparse
+import os
 import logging
 import uvicorn
 
@@ -14,6 +15,7 @@ def main():
         help="로깅 레벨 지정"
     )
     args = parser.parse_args()
+    os.environ["NMDOSE_LOGLEVEL"] = args.loglevel.upper()
 
     # 2. 로깅 설정 (Python 표준)
     logging.basicConfig(
@@ -27,7 +29,7 @@ def main():
     logging.getLogger("uvicorn.access").setLevel(args.loglevel.upper())
 
     # ✅ 로깅 레벨 명시적으로 출력
-    print(f"▶ 실행 인자로 받은 로그레벨 = {args.loglevel.upper()}")
+    print(f"▶ 환경변수 NMDOSE_LOGLEVEL = {os.environ['NMDOSE_LOGLEVEL']}")
 
     
     # 4. 서버 실행
