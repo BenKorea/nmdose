@@ -1,4 +1,21 @@
-# src/nmdose/run.py
+"""
+nmdose FastAPI 서버 실행 스크립트 (run.py)
+
+기능:
+- 명령행 인자로 로깅 레벨을 설정합니다. (--loglevel)
+- 로깅 설정은 Python 표준 로그와 Uvicorn 로그를 모두 연동합니다.
+- FastAPI 앱(nmdose.main:app)을 직접 실행합니다.
+
+사용법:
+    python run.py --loglevel debug
+
+환경변수:
+    NMDOSE_LOGLEVEL: 내부 설정과 로그레벨 공유를 위해 사용됩니다.
+
+주의:
+- uvicorn 자체 로그레벨과 Python logging 레벨은 동기화됩니다.
+"""
+
 
 # ───── 표준 라이브러리 ─────
 import argparse
