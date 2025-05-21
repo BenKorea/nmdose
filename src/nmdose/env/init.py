@@ -7,8 +7,8 @@ import logging
 
 # ───── 내부 모듈 ─────
 from nmdose.config_loader.dotenv_loader import init_dotenv
-from nmdose.config_loader.retrieve_options_loader import get_retrieve_options_config
-from nmdose.config_loader.dicom_network_entities_loader import get_dicom_network_entities_config
+from nmdose.config_loader.retrieve_options_loader import get_retrieve_config
+from nmdose.config_loader.dicom_nodes_loader import get_nodes_config
 from nmdose.utils.date_utils import make_batch_date_range
 
 # ───── 로거 객체 생성 ─────
@@ -30,8 +30,8 @@ def init_environment():
     init_dotenv()
 
     # PACS 및 retrieve 설정 로드
-    PACS             = get_dicom_network_entities_config()
-    RETRIEVE_OPTIONS = get_retrieve_options_config()
+    PACS             = get_nodes_config()
+    RETRIEVE_OPTIONS = get_retrieve_config()
 
     # PACS 엔드포인트 선택 (RUNNING_MODE env var 기반)
     rm = os.getenv("RUNNING_MODE")

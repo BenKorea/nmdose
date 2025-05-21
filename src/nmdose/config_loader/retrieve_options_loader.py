@@ -42,7 +42,7 @@ class RetrieveOptions:
     retrieve_to_dose: RetrieveToDoseConfig
 
 
-def get_retrieve_options_config(path: Path = CONFIG_FILE) -> RetrieveOptions:
+def get_retrieve_config(path: Path = CONFIG_FILE) -> RetrieveOptions:
     with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f)
 

@@ -9,7 +9,7 @@ from dateutil import parser
 import psycopg2
 
 # ───── 내부 모듈 ─────
-from nmdose.config_loader.retrieve_options_loader import get_retrieve_options_config
+from nmdose.config_loader.retrieve_options_loader import get_retrieve_config
 from nmdose.config_loader.database import get_db_config
 
 # ───── 로거 객체 생성 ─────
@@ -23,7 +23,7 @@ def make_batch_date_range() -> str:
     일일 시작일을 넘지 않도록 종료일을 제한합니다.
     반환값: 'YYYYMMDD-YYYYMMDD' 문자열
     """
-    RETRIEVE_OPTIONS = get_retrieve_options_config()
+    RETRIEVE_OPTIONS = get_retrieve_config()
     cfg = RETRIEVE_OPTIONS.retrieve_to_research
 
     # 설정값 파싱

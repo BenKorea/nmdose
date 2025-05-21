@@ -1,0 +1,25 @@
+clinicalPACS:
+  aet: NMPACS
+  ip: 172.17.111.214
+  port: 104
+  enable_tls: true
+  cert_file: certs/clinical.crt
+  key_file: certs/clinical.key
+
+researchPACS:
+  aet: ORTHANC
+  ip: 127.0.0.1
+  port: 4242
+  enable_tls: false
+
+dosePACS:
+  aet: NMDOSE
+  ip: 127.0.0.1
+  port: 5678
+  enable_tls: false
+
+simulationPACS:
+  aet: NMFULLDATA
+  ip: 127.0.0.1
+  port: 5680
+  enable_tls: false
