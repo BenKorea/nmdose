@@ -1,0 +1,6 @@
+host: 127.0.0.1
+port: 5432
+database: nmdose
+
+superuser_id: postgres     # PostgreSQL 설치 시 기본 생성 계정
+user_id: nmuser            # 앱용 일반 사용자 계정
